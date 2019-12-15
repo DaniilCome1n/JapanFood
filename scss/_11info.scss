@@ -1,0 +1,63 @@
+$primaryBackgroundColor:#45493b;
+
+$h3fontFamily:Montserrat,roboto;
+$h3fontColor:#eaeaea;
+$h3fontSize:20px;
+
+$pFontFamily:Montserrat,roboto;
+$pFontColor:#eaeaea;
+$pFontSize:15px;
+
+$aFontFamily:Montserrat,roboto;
+$aFontColor:#eaeaea;
+$aFontSize:20px;
+
+.info{
+    width: auto;
+    height: 200px;
+    background-color: $primaryBackgroundColor;
+    display: flex;
+    flex-direction: row;
+    
+
+    .infoBox{
+        display: flex;
+        flex-direction: column;
+        padding-top: 40px;
+
+        h3{
+            font-family: $h3fontFamily;
+            color: $h3fontColor;
+            font-size: $h3fontSize;
+            text-transform: uppercase;
+            font-weight: bolder;
+            margin-bottom: 15px;
+        }
+
+        p{
+            font-family: $pFontFamily;
+            color: $pFontColor;
+            font-size: $pFontSize;
+        }
+
+        a{
+            font-family:$aFontFamily;
+            color: $aFontColor;
+            font-size: $aFontSize;
+            margin-top: 5px;
+            
+        }
+
+        
+    }
+
+    .mainBox{
+        padding-left: 10%;
+        width: 400px;
+        margin-right: 200px;
+    }
+
+    .subBox{
+        margin-right: 100px;
+    }
+}

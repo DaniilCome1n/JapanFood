@@ -1,0 +1,43 @@
+$primaryBackgrondColor: #45493b;
+
+
+$h3fontFamily:GoodDog,sans-serif;
+$h3fontSize: 40px;
+$h3fontColor: #afc67b;
+
+$pFontColor:#eaeaea;
+$pFontSize:17px;
+$pFontFamily:Montserrat,roboto;
+
+.weAreSimple{
+    width: auto;
+    height:300px ;
+    background-color:$primaryBackgrondColor ;
+    margin-top: 40px;
+
+    h3{
+        
+        display: block;
+        padding-top: 80px;
+        text-align: center;
+        font-family: $h3fontFamily;
+        font-size: $h3fontSize;
+        color: $h3fontColor;
+    }
+
+    p{
+        display: block;
+        padding-top: 30px;
+        padding-left: 25%;
+        padding-right: 25%;
+        text-align: center;
+        color: $pFontColor;
+        font-family:$pFontFamily ;
+        font-size:$pFontSize ;
+    }
+
+    .points{
+        padding-left: 47%;
+        margin-top: 30px;
+    }
+}

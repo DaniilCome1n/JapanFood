@@ -1,0 +1,31 @@
+@import 'reset';
+@import '1header';
+@import '2aboutUs';
+@import '3news';
+@import '4tradition';
+@import '5weAreSimple';
+
+@import '7menu';
+@import '8booking';
+@import '08block';
+@import '9feeds';
+@import '10social';
+@import '11info';
+
+@font-face {
+    font-family: "GoodDog";
+    src: url(../fonts/1651.ttf);
+  }
+
+$bodyBgColor : #212121;
+
+
+body{
+    background-color: $bodyBgColor;
+    width: 100%;
+    height: 100%;
+}
+
+.content{
+  margin: 0 50px 0 50px;
+}

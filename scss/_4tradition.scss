@@ -1,0 +1,120 @@
+$primaryBackgroundColor:#45493b;
+
+$mainH3fontColor:#afc67b;
+$mainH3fontFamily:GoodDog,sans-serif;
+$mainH3fontSize:40px;
+
+$mainPfontColor:#eaeaea;
+$mainPfontSize:40px;
+$mainPfontFamily:Montserrat,sans-serif;
+
+$dishesH3fontSize:25px;
+$dishesH3fontColor:#afc67b;
+$dishesH3fontFamily:GoodDog,sans-serif;
+$dishesPfontSize:15px;
+$dishesPfontColor:#e8e8e8;
+$dishesPfontFamily:Montserrat,sans-serif;
+$dishesPricefontSize:15px;
+$dishesPricefontColor:#e8e8e8;
+$dishesPricefontFamily:GoodDog,sans-serif;
+
+.tradition{
+    width: 920px;
+    height: 870px;
+    background-color: $primaryBackgroundColor;
+    margin-top: 30px;
+    margin-left: 12%;
+    margin-right: 12%;
+
+    .traditionHead{
+
+        width: auto;
+        height: 180px;
+        .mainH3{
+            display: block;
+            margin-top: 40px;
+            color: $mainH3fontColor;
+            font-family: $mainH3fontFamily;
+            font-size: $mainH3fontSize;
+            margin-left: 37%;
+            padding-top:40px;
+        }
+    
+        .mainP{
+            display: block;
+            font-family: $mainPfontFamily;
+            font-size: $mainPfontSize;
+            color:$mainPfontColor;
+            text-transform: uppercase;
+            font-weight: 100;
+            margin-left: 32%;
+        }
+    }
+    
+
+    .traditionContent{
+        display: flex;
+        flex-direction: column;
+        
+        .californiaImg{
+            background-image: url(../img/4tradition/califotnia.png);
+            background-size: 230px 230px;
+        }
+
+        .traditionalImg{
+            background-image: url(../img/4tradition/traditionalWok.png);
+            background-size: 230px 230px;
+        }
+
+        .pokeBowlImg{
+            background-image: url(../img/4tradition/pokeBowl.png);
+            background-size: 230px 230px;
+        }
+
+        .freshSalmonImg{
+            background-image: url(../img/4tradition/freshSalmon.png);
+            background-size: 230px 230px;
+        }
+
+        .avocadoImg{
+            background-image: url(../img/4tradition/avocadoSushi.png);
+            background-size: 230px 230px;
+        }
+
+        .kingSushiImg{
+            background-image: url(../img/4tradition/kingSushi.png);
+            background-size: 230px 230px;
+        }
+
+
+        .line{
+            display: flex;
+            flex-direction: row;
+        }
+        .dishes{
+            width: 230px;
+            height: 230px;
+
+            h3{
+                font-family: $dishesH3fontFamily;
+                color: $dishesH3fontColor;
+                font-size: $dishesH3fontSize;
+                text-align: center;
+                padding-top: 70px;
+            }
+
+            p{
+                font-family: $dishesPfontFamily;
+                color: $dishesPfontColor;
+                font-size: $dishesPfontSize;
+                text-align: center;
+                padding-top: 5px;
+            }
+
+            .price{
+                font-family: $dishesPricefontFamily;
+                font-size: $dishesPricefontSize;
+            }
+        }
+    }
+}

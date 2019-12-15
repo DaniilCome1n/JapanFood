@@ -1,0 +1,108 @@
+$primaryBackgroundColor:#45493b;
+
+$discoverH3FontSize:50px;
+$discoverH3FontColor:#afc67b;
+$discoverH3FontFamily:GoodDog,sans-serif;
+
+$discoverH2FontSize:50px;
+$discoverH2FontColor:#eaeaea;
+$discoverH2FontFamily:Montserrat,roboto;
+
+$columnPfontColor:#eaeaea;
+$columnPfontFamily:Montserrat,roboto;
+$columnPfontSize:15px;
+
+.menu{
+    width: auto;
+    height: 1300px;
+    background-image: url(../img/6newMenu/newMenuBackground.png);
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    padding-top: 250px;
+
+    .discover{
+        width: auto;
+        height: 500px;
+        background-color: $primaryBackgroundColor;
+
+        h3{
+            display: block;
+            text-align: center;
+            font-size: $discoverH3FontSize;
+            font-family: $discoverH3FontFamily;
+            text-transform: uppercase;
+            color: $discoverH3FontColor;
+        }
+
+        h2{
+            display: block;
+            text-align: center;
+            font-size: $discoverH2FontSize;
+            color: $discoverH2FontColor;
+            font-family: $discoverH2FontFamily;
+            text-transform: uppercase;
+
+        }
+
+        .nigiri{
+            background-image: url(../img/6newMenu/nigiri.png);
+           
+        }
+        .sushi{
+            background-image: url(../img/6newMenu/sushi.png);
+            
+        }
+        .uramaki{
+            background-image: url(../img/6newMenu/uramaki.png);
+           
+        }
+        .ramen{
+            background-image: url(../img/6newMenu/ramen.png);
+            
+        }
+        .soshimi{
+            background-image: url(../img/6newMenu/sashimi.png);
+            
+        }
+        .rice{
+            background-image: url(../img/6newMenu/ricesushi.png);
+            
+        }
+
+
+        .pointsContainer{
+            display: flex;
+            flex-direction: row;
+            padding-top: 20px;
+            
+            .menuPoints{
+                width: 350px;
+                height: 100px;
+                background-repeat: no-repeat;
+                padding-left: 90px;
+                margin-top: 20px;
+            }
+           
+            
+            .column{
+                display: flex;
+                flex-direction: column;
+                padding-left: 150px;
+                
+                h3{
+                    font-size: 25px;
+                    text-transform: none;
+                    text-align: left;
+                }
+
+                p{
+                    font-family: $columnPfontFamily;
+                    font-size: $columnPfontSize;
+                    color:$columnPfontColor;
+                    font-weight: 100;
+                }
+            }
+        }
+    }
+}
+

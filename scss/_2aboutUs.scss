@@ -1,0 +1,40 @@
+$h3fontColor:#afc67b;
+$h3fontSize:30px;
+$h3fontFamily:GoodDog,sans-serif;
+
+$pFontColor:#ffffff;
+$pFontSize:15px;
+$pFontFamily:Montserrat,roboto;
+
+
+
+.aboutUs{
+    width: 100%;
+    height:300px;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/2aboutus/aboutusBackground.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: -70px;
+    
+    h3{
+        display: inline-block;
+        margin: 70px 0 0 60px;
+        font-family: $h3fontFamily;
+        color: $h3fontColor;
+        font-size: $h3fontSize;
+
+    }
+
+    p{
+        display: inline-block;
+        margin:40px 0 0 60px;
+        width: 430px;
+        font-family: $pFontFamily;
+        color:$pFontColor;
+        font-size: $pFontSize;
+        font-weight: 100;
+
+    }
+}

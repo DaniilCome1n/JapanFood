@@ -1,0 +1,107 @@
+$primaryBackgroundColor:#45493b;
+
+$h3fontFamily:GoodDog,sans-serif;
+$h3fontSize:60px;
+$h3fontColor:#afc67b;
+
+$h2fontFamily:Montserrat,roboto;
+$h2fontSize:60px;
+$h2fontColor:#eaeaea;
+
+$cardBackgroundColor:#e7e7e7;
+
+$cardNamefontFamily:Montserrat,roboto;
+$cardNamefontSize:15px;
+$cardNamefontColor:#555555;
+
+$descrNamefontFamily:Montserrat,roboto;
+$descrNamefontSize:17px;
+$descrNamefontColor:#4f4e4e;
+
+$cardPfontFamily:Montserrat,roboto;
+$cardPfontSize:15px;
+$cardPfontColor:#4f4e4e;
+
+$card_a_fontFamily:Montserrat,roboto;
+$card_a_fontSize:15px;
+$card_a_fontColor:#555555;
+
+.feeds{
+    width: 100%;
+    height: 700px;
+    background-color: $primaryBackgroundColor;
+    display: flex;
+    flex-direction: column;
+
+    h3{
+        font-family: $h3fontFamily;
+        font-size: $h3fontSize;
+        color: $h3fontColor;
+        display: block;
+        text-align: center;
+        padding-top: 10px;
+    }
+    h2{
+        display: block;
+        text-align: center;
+        font-size: $h2fontSize;
+        color: $h2fontColor;
+        font-family: $h2fontFamily;
+        text-transform: uppercase;
+    }
+    .cardsContainer{
+        display: flex;
+        flex-direction: row;
+        padding-left: 7%;
+        padding-top: 10px;
+
+        
+        .card{
+            
+            width: 338px;
+            height: 480px;
+            background-color: $cardBackgroundColor;
+            margin-right: 30px;
+            background-repeat: no-repeat;
+
+            .cardName{
+                color: $cardNamefontColor;
+                font-family:$cardNamefontFamily; 
+                font-size: $cardNamefontSize;
+                font-weight: bolder;
+                padding-left: 20px;
+                padding-top: 20px;
+            }
+
+            .descr{
+                color: $descrNamefontColor;
+                font-family: $descrNamefontFamily;
+                font-size: $descrNamefontSize;
+                font-weight: bolder;
+                padding-left: 20px;
+                padding-top: 20px;
+            }
+            p{
+                color: $cardPfontColor;
+                font-size: $cardPfontSize;
+                font-family: $cardPfontFamily;
+                padding-left: 20px;
+                padding-top: 10px;
+            }
+
+            a{
+                display: inline-block;
+                color: $card_a_fontColor;
+                font-family: $card_a_fontFamily; 
+                font-size: $card_a_fontSize;
+                text-transform: uppercase;
+                font-weight: bolder;
+                font-stretch: expanded;
+                border-bottom: 5px solid #afc67b;
+                margin-left: 20px;
+                padding-top: 20px;
+            }
+            
+        }
+    }
+}
