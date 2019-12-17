@@ -5,3 +5,9 @@
     background-size: auto auto;
     background-repeat: no-repeat;
 }
+
+@media (max-width: 376px){
+    .block{
+        display: none;
+    }
+}

@@ -59,11 +59,41 @@ $bookingFormFontFamily:Montserrat,roboto;
             height: 30px;
             text-transform: uppercase;
             font-weight: bold;
+            transition-property: all;
+            transition-duration: .5s;
+            outline: none;
+        }
+
+        .submit:hover{
+            box-shadow: 3px 3px 5px white;
+        }
+
+        .submit:focus{
+            background-color:#eaeaea ;
+            color: #212121;
         }
 
         .select{
             width: 250px;
             height: 35px;
+        }
+    }
+}
+
+@media (max-width: 376px){
+    .booking{
+        height: 700px;
+
+        h3{
+            padding-left: 110px;
+        }
+
+        .form{
+            flex-direction: column;
+
+            .formBlock{
+                padding-left: 60px;
+            }
         }
     }
 }

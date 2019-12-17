@@ -106,3 +106,34 @@ $columnPfontSize:15px;
     }
 }
 
+@media (max-width: 376px){
+    .menu{
+        margin-top: 50px;
+
+        .discover{
+            height: 910px;
+            .pointsContainer{
+                width: 350px;
+                flex-direction: column;
+                .menuPoints{
+                    background-position-y: 5px;
+                }
+                .column{
+                    
+                    padding:0 0 0 15px;
+                    h3{
+                        display: inline-block;
+                        font-size: 30px;
+                        width: 250px;
+                    }
+                    p{
+
+                        display: inline-block;
+                        width: 250px;
+                        
+                    }
+                }
+            }
+        }
+    }
+}

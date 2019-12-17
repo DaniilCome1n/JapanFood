@@ -63,6 +63,8 @@ $card_a_fontColor:#555555;
             background-color: $cardBackgroundColor;
             margin-right: 30px;
             background-repeat: no-repeat;
+            transition-property: all;
+            transition-duration: .5s;
 
             .cardName{
                 color: $cardNamefontColor;
@@ -100,8 +102,37 @@ $card_a_fontColor:#555555;
                 border-bottom: 5px solid #afc67b;
                 margin-left: 20px;
                 padding-top: 20px;
+                transition-property: all;
+                transition-duration: .5s;
+            }
+
+            a:hover{
+                color: #afc67b;
+                border-bottom: 5px solid #45493b;
+                text-shadow: -1px -1px 1px #45493b;
+
             }
             
+        }
+
+        .card:hover{
+            box-shadow: 7px 7px 10px #212121;
+        }
+    }
+}
+
+@media (max-width: 376px){
+    .feeds{
+        height: 1750px;
+        h3{}
+        h2{}
+        .cardsContainer{
+            padding-left: 15px;
+            flex-direction: column;
+            
+            .card{
+                margin-bottom: 30px;
+            }
         }
     }
 }

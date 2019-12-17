@@ -11,12 +11,22 @@ $mainPfontFamily:Montserrat,sans-serif;
 $dishesH3fontSize:25px;
 $dishesH3fontColor:#afc67b;
 $dishesH3fontFamily:GoodDog,sans-serif;
+
 $dishesPfontSize:15px;
 $dishesPfontColor:#e8e8e8;
 $dishesPfontFamily:Montserrat,sans-serif;
+
 $dishesPricefontSize:15px;
 $dishesPricefontColor:#e8e8e8;
 $dishesPricefontFamily:GoodDog,sans-serif;
+
+$mainH3fontSizeMobile:50px;
+
+$dishesH3fontSizeMobile:30px;
+
+$dishesPfontSizeMobile:20px;
+
+$dishesPricefontSizeMobile:20px;
 
 .tradition{
     width: 920px;
@@ -118,3 +128,50 @@ $dishesPricefontFamily:GoodDog,sans-serif;
         }
     }
 }
+
+@media (max-width: 376px){
+    .tradition{
+        width: auto;
+        height: auto;
+        margin: 0;
+
+        .traditionHead{
+            .mainH3{
+                margin-left: 45px;
+                padding-top: 40px;
+                font-size: $mainH3fontSizeMobile;
+
+            }
+            .mainP{
+                margin-left: 27px;
+            }
+        }
+
+
+        .traditionContent{
+            padding-left: 75px;
+
+            .line{
+                flex-direction: column;
+            }
+
+            .reverse{
+                flex-direction: column-reverse;
+            }
+
+            .dishes{
+
+                h3{
+                    font-size:$dishesH3fontSizeMobile ;
+                }
+                p{
+                    font-size: $dishesPfontSizeMobile;
+                }
+                .price{
+                    font-size:$dishesPricefontSizeMobile ;
+                }
+            }
+        }
+    }
+}
+
